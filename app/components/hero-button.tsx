@@ -15,7 +15,7 @@ export default function HeroButton({
       className={clsx(
         "font-sans font-bold text-lg bg-transparent border-none p-0 m-0 cursor-pointer",
         "hover:opacity-80 transition-opacity duration-200",
-        "focus:outline-none",
+        "focus:outline-none text-[36px]",
         className
       )}
       {...props}
