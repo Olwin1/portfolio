@@ -44,7 +44,7 @@ export default function FloatingButton({
         px-6 py-3
         font-sans font-semibold
         text-foreground
-        transition-transform duration-300 ease-out
+        transition-all duration-300 ease-out
         hover:shadow-lg
         hover:bg-accent/10
         hover:border-accent

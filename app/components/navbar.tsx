@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import FloatingButton from "./floating-button";
+import NavLink from "./navlink";
 
 export default function Navbar() {
   return (
@@ -10,20 +11,27 @@ export default function Navbar() {
         <Link href="/" className="font-sans text-xl font-bold">
           OliverMunn
         </Link>
-        <div className="flex gap-4 font-mono">
-            <Link href="" className="flex"><p className="flex items-center text-[15px] pr-2 text-greyText">01</p><p className="text-[20px] text-greyText">Projects</p></Link>
-            <Link href="" className="flex"><p className="flex items-center text-[15px] pr-2 text-greyText">01</p><p className="text-[20px] text-greyText">Projects</p></Link>
-            <Link href="" className="flex"><p className="flex items-center text-[15px] pr-2 text-greyText">01</p><p className="text-[20px] text-greyText">Projects</p></Link>
-
+        <div className="flex gap-8 font-mono">
+        <NavLink href="#projects" number="01">
+            Projects
+        </NavLink>
+        <NavLink href="#experience" number="02">
+            Experience
+        </NavLink>
+        <NavLink href="#about" number="03">
+            About
+        </NavLink>
         </div>
 
-
         <div className="flex items-center gap-8 font-sans font-semibold justify-end">
-          <Link href="#about" className="hover:opacity-70 transition-opacity text-greyText">
+          <Link
+            href="#about"
+            className="text-greyText hover:text-foreground transition-colors duration-300 ease-out"
+          >
             View CV
           </Link>
 
-          <FloatingButton className="hover:opacity-70 transition-opacity border-border focus:ring-border/50 hover:border-border hover:bg-border/10">
+          <FloatingButton className="hover:text-accent border-border hover:border-accent focus:ring-border/50 hover:focus:ring-accent/50 hover:border-accent hover:bg-transparent">
             Get in Touch
           </FloatingButton>
         </div>
