@@ -8,11 +8,11 @@ export default function Home() {
     <div>
       <Navbar />
       <div className="px-48">
-        <main className="flex items-center mt-[15vh]">
-          <div className="w-1/2">
+        <main className="flex items-center mt-[15vh] gap-16">
+          <div className="w-2/3">
             <div>
-              <em className="text-[24px]">3rd Year Computer Systems Engineering Student</em>
               <h1 className="font-semibold text-[48px]">Oliver Munn</h1>
+              <em className="text-[22px] text-greyText">3rd Year Computer Systems Engineering Student</em>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 ornare venenatis metus, vitae rhoncus felis volutpat vel. In
@@ -25,7 +25,7 @@ export default function Home() {
               <Link href="" className="flex items-center">See My CV</Link>
             </div>
           </div>
-          <div className="w-1/2 flex flex-col gap-12 text-[36px]">
+          <div className="w-1/3 flex flex-col gap-12 text-[36px]">
             <HeroButton>
               <strong>My Projects</strong>
             </HeroButton>
